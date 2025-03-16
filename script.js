@@ -23,6 +23,7 @@ while (true) {
     const number2 = Number(prompt("Enter a number"));
     switch (islem) {
       case "1":
+        //kullanıcı 1 girerse toplama fonksiyonu çalıştırılacak
         sonuc = topla(number, number2);
         break;
       case "2":
