@@ -30,6 +30,7 @@ while (true) {
         sonuc = cikart(number, number2);
         break;
       case "3":
+        //kullanıcı 3 girerse çarpma işlemi çalışacak
         sonuc = carp(number, number2);
         break;
       case "4":
