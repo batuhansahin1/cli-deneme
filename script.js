@@ -11,14 +11,16 @@ function bol(n1, n2) {
   if (n2 === 0) return "Hiçbir sayı sıfıra bölünemez";
   return n1 / n2;
 }
-
+function mod(n1,n2){
+  return n1%n2;
+}
 let sonuc;
 while (true) {
   const islem = prompt(
-    "Islem girin:(1:toplama,2:çıkarma,3:çarpma 4:bölme 5:çıkış)"
+    "Islem girin:(1:toplama,2:çıkarma,3:çarpma 4:bölme 5:mod 0:çıkış)"
   );
   try {
-    if (islem == 5) return;
+    if (islem == 0) return;
     const number = Number(prompt("Enter a number"));
     const number2 = Number(prompt("Enter a number"));
     switch (islem) {
@@ -36,6 +38,9 @@ while (true) {
       case "4":
         //kullanıcı 4 girerse bölme işlemi çalışıcak
         sonuc = bol(number, number2);
+        break;
+      case "5":
+        sonuc=mod(number,number2)
         break;
       default:
         throw new Error(
