@@ -34,6 +34,7 @@ while (true) {
         sonuc = carp(number, number2);
         break;
       case "4":
+        //kullanıcı 4 girerse bölme işlemi çalışıcak
         sonuc = bol(number, number2);
         break;
       default:
