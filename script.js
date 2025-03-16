@@ -17,26 +17,30 @@ while (true) {
   const islem = prompt(
     "Islem girin:(1:toplama,2:çıkarma,3:çarpma 4:bölme 5:çıkış)"
   );
-  if (islem == 5) return;
-  const number = Number(prompt("Enter a number"));
-  const number2 = Number(prompt("Enter a number"));
-  switch (islem) {
-    case "1":
-      sonuc = topla(number, number2);
-      break;
-    case "2":
-      sonuc = cikart(number, number2);
-      break;
-    case "3":
-      sonuc = carp(number, number2);
-      break;
-    case "4":
-      sonuc = bol(number, number2);
-      break;
-    default:
-      console.log(
-        "you entered number in wrong format please enter valid number"
-      );
+  try {
+    if (islem == 5) return;
+    const number = Number(prompt("Enter a number"));
+    const number2 = Number(prompt("Enter a number"));
+    switch (islem) {
+      case "1":
+        sonuc = topla(number, number2);
+        break;
+      case "2":
+        sonuc = cikart(number, number2);
+        break;
+      case "3":
+        sonuc = carp(number, number2);
+        break;
+      case "4":
+        sonuc = bol(number, number2);
+        break;
+      default:
+        throw new Error(
+          "you entered number in wrong format please enter valid number"
+        );
+    }
+  } catch (error) {
+    console.log(error);
   }
   console.log(sonuc);
 }
