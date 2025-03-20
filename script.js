@@ -18,13 +18,21 @@ function mod(n1, n2) {
 function log(n1) {
   return Math.log2(n1);
 }
+
 function denemeFonksiyonu() {
   return "git stash için deneme fonksiyonu tanımlandı";
+}
+function expo(n1, n2) {
+  let sonuc = 1;
+  for (let index = 0; index < n2; index++) {
+    sonuc = sonuc * n1;
+  }
+  return sonuc;
 }
 let sonuc;
 while (true) {
   const islem = prompt(
-    "Islem girin:(1:toplama,2:çıkarma,3:çarpma 4:bölme 5:mod 6:logaritma 7:Stash deneme 0:çıkış)"
+    "Islem girin:(1:toplama,2:çıkarma,3:çarpma 4:bölme 5:mod 6:logaritma 7:üs alma 8:Stash deneme 0:çıkış)"
   );
   try {
     if (islem == 0) return;
@@ -56,7 +64,11 @@ while (true) {
         sonuc = log(number);
         break;
       case "7":
+        sonuc = expo(number, number2);
+        break;
+      case "8":
         sonuc = denemeFonksiyonu();
+        break;
       default:
         throw new Error(
           "you entered number in wrong format please enter valid number"
