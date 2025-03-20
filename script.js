@@ -23,7 +23,7 @@ function expo(n1, n2) {
   for (let index = 0; index < n2; index++) {
     sonuc = sonuc * n1;
   }
-  console.log(`Üs alındı ${sonuc}`);
+  return sonuc;
 }
 let sonuc;
 while (true) {
