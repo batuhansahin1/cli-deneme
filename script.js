@@ -29,10 +29,16 @@ function expo(n1, n2) {
   }
   return sonuc;
 }
+function log(n1) {
+  return Math.log2(n1);
+}
+function derivation(number) {
+  console.log("kök alma işlemi gerçekleşti");
+}
 let sonuc;
 while (true) {
   const islem = prompt(
-    "Islem girin:(1:toplama,2:çıkarma,3:çarpma 4:bölme 5:mod 6:logaritma 7:üs alma 8:Stash deneme 0:çıkış)"
+    "Islem girin:(1:toplama,2:çıkarma,3:çarpma 4:bölme 5:mod 6:logaritma 7:üs alma 8:Stash deneme 9:derivation 0:çıkış)"
   );
   try {
     if (islem == 0) return;
@@ -68,7 +74,10 @@ while (true) {
         break;
       case "8":
         sonuc = denemeFonksiyonu();
+
         break;
+      case "9":
+        derivation(5);
       default:
         throw new Error(
           "you entered number in wrong format please enter valid number"
