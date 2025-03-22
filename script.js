@@ -1,5 +1,15 @@
 const prompt = require("prompt-sync")();
 
+const dotenv = require("dotenv");
+dotenv.config();
+const API_KEY = process.env.API_KEY;
+const DATABASE_URL = process.env.DATABASE_URL;
+console.log(`api url:${API_KEY}`);
+console.log("database url:", DATABASE_URL);
+const SECRET_KEY = process.env.SECRET_KEY;
+const DEBUG = process.env.DEBUG;
+console.log(SECRET_KEY);
+console.log(DEBUG);
 function topla(n1, n2) {
   return n1 + n2;
 }
