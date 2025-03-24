@@ -1,0 +1,24 @@
+From efefbd76c66d3b8a6e459f13822dd5001a950348 Mon Sep 17 00:00:00 2001
+From: batuhansahin1 <batuhansahin466@gmail.com>
+Date: Mon, 24 Mar 2025 22:43:37 +0300
+Subject: [PATCH] =?UTF-8?q?patch=5Ftest=20olu=C5=9Fturuldu?=
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+---
+ patch_test.txt | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 patch_test.txt
+
+diff --git a/patch_test.txt b/patch_test.txt
+new file mode 100644
+index 0000000..29fe537
+--- /dev/null
++++ b/patch_test.txt
+@@ -0,0 +1 @@
++bu txt patcch için oluşturuldu
+\ No newline at end of file
+-- 
+2.48.1.windows.1
+
