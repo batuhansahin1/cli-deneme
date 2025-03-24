@@ -1,0 +1,1 @@
+güncel olmayan master'a branch merge etme
