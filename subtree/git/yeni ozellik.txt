@@ -1,9 +1,0 @@
-yeni özellik deneme deneme 
-git restore . bunda işe yaramıyor çünkü önceki committe bu dosya yok
-git diff'te de gözükmüyor çünkü bu  son committe daha doğrusu git takip etmiyor
-git diff'te gözükmemesinin sebebi bu git add . deyince geçici alana ekliyor ve 
-git bunu takip etmeye başlıyor bu yüzden git diff --staged'da gözüküyor.Dediğim
-gibi çalışma alanındayken git status'da 
-nothing added to commit but untracked files present (use "git add" to track)
-bu metni döndürüyor
-
