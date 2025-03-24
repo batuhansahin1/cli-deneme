@@ -1,0 +1,15 @@
+bakalım git görebilecek mi
+commit mesajı ne olsun 
+şimdi birkaç deney yapıcam
+direkt commit geçici alan boşken
+çalışma alanından commit atınca git diff --staged değişecek mi
+deneyelim nasıl olucak
+şimdi tam tersini deneyeceğiz stagedekini ekleyip çalışma alanındaki 
+siliniyor mu diye bakıcaz.
+<<<<<<< HEAD
+gncel olmayan repodan push
+=======
+güncel olmayan repoya push isteği
+>>>>>>> f6b652295504b45054032f799537912474215611
+
+güncel olmayan yerde önce commit yapıp pull yapıcaz daha sonra bunu pushlıcaz
